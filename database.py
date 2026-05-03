@@ -10,7 +10,7 @@ load_dotenv(Path(__file__).resolve().parent / ".env")
 db_url = os.environ.get("DATABASE_URL")
 if not db_url:
     raise RuntimeError(
-        "DATABASE_URL is not set. Copy backend/.env.example to .env in the project root and set DATABASE_URL, "
+        "DATABASE_URL is not set. Copy .env.example to .env and set DATABASE_URL, "
         "or export DATABASE_URL in your environment."
     )
 
